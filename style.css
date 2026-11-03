@@ -549,4 +549,20 @@ body.modal-open{overflow:hidden}
     grid-template-columns: 1fr !important;
   }
 }
+/* Improve logo visibility on dark portfolio background */
+#tools .tool-item img {
+    width: 32px !important;
+    height: 32px !important;
+    max-width: 32px !important;
+    max-height: 32px !important;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Make dark logos easier to see */
+#tools .tool-item img[alt="GitHub"],
+#tools .tool-item img[alt="Notion"],
+#tools .tool-item img[alt="CapCut"] {
+    filter: brightness(0) invert(1);
+}
 
